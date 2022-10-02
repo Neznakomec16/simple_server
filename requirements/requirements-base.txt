@@ -22,6 +22,8 @@ markupsafe==2.1.1         # via mako
 passlib==1.7.4            # via -r requirements/requirements-base.in
 pydantic==1.10.1          # via fastapi
 pyjwt==2.4.0              # via -r requirements/requirements-base.in
+python-multipart==0.0.5   # via -r requirements/requirements-base.in
+six==1.16.0               # via python-multipart
 sniffio==1.2.0            # via anyio
 sqlalchemy==1.4.40        # via alembic, sqlalchemy-utils
 sqlalchemy-utils==0.38.3  # via -r requirements/requirements-base.in

@@ -14,7 +14,7 @@ def cli():
     parser.add_argument("--env_file", type=Path, default=None)
     args = parser.parse_args()
 
-    config = Config() if args.env_file is None else Config.get_from_env_file(args.env_file)
+    config = Config.get_from_env() if args.env_file is None else Config.get_from_env_file(args.env_file)
     app = create_app(config)
     uvicorn.run(app, host=args.host, port=args.port)
 

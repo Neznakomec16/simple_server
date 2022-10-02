@@ -35,7 +35,7 @@ setup(
     install_requires=load_requirements("requirements/requirements-base.txt"),
     entry_points={
         "console_scripts": [
-            f"{MODULE_NAME}-app = {MODULE_NAME}.app.__main__:main",
+            f"{MODULE_NAME}-app = main.application.__main__:cli",
             f"{MODULE_NAME}-db = {MODULE_NAME}.db.__main__:main",  # todo: Imlement db
         ]
     },
