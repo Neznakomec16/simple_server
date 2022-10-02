@@ -1,0 +1,6 @@
+class JWTPackerError(Exception):
+    ...
+
+
+class ExpiredTokenError(JWTPackerError):
+    ...
