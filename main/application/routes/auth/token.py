@@ -1,12 +1,12 @@
-from passlib.hash import bcrypt
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
+from passlib.hash import bcrypt
 from pydantic import BaseModel
 from starlette.requests import Request
 
 from main.application.auth import PackerInterface
 from main.application.auth.utils import create_access_token
-from main.application.context import user_repository_context, jwt_context
+from main.application.context import jwt_context, user_repository_context
 from main.application.repositories import UserRepositoryInterface
 
 

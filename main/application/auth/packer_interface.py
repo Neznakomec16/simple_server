@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from datetime import datetime, timedelta
-from typing import Mapping, Any
+from typing import Any, Mapping
 
 
 class PackerInterface(ABC):

@@ -9,10 +9,10 @@ from main.application.auth.jwt import JWTPacker
 from main.application.config import Config
 from main.application.context import (
     config_context,
+    jwt_context,
     postgres_context,
     redis_context,
     user_repository_context,
-    jwt_context,
 )
 from main.application.repositories import PostgresUserRepository
 

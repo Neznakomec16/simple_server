@@ -1,8 +1,9 @@
 from fastapi import APIRouter
 
 from main.application.repositories import UserRecord
+
 from .register import register
-from .token import token, TokenHandlerResponse
+from .token import TokenHandlerResponse, token
 
 auth_router = APIRouter(prefix="/auth")
 auth_router.add_api_route("/token", token, response_model=TokenHandlerResponse, methods=["POST"])

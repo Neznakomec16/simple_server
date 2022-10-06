@@ -4,7 +4,7 @@ from main.application.app_ext import ConfiguredFastAPI
 from main.application.config import Config
 from main.application.context import config_context
 from main.application.routes import configure_routes
-from main.application.startup_signals import postgres_signal, redis_signal, repositories_signal, packer_signal
+from main.application.startup_signals import packer_signal, postgres_signal, redis_signal, repositories_signal
 
 
 def create_app(config: Config) -> FastAPI:

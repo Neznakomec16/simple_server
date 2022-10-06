@@ -1,4 +1,4 @@
-from sqlalchemy import Column, DateTime, Integer, String, func, Boolean
+from sqlalchemy import Boolean, Column, DateTime, Integer, String, func
 from sqlalchemy_utils import EmailType
 
 from main.db.models.base import Base

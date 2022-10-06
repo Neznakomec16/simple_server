@@ -1,6 +1,6 @@
-from pydantic import BaseModel, Field, EmailStr, SecretStr
-from starlette.requests import Request
 from passlib.hash import bcrypt
+from pydantic import BaseModel, EmailStr, Field, SecretStr
+from starlette.requests import Request
 
 from main.application.context import user_repository_context
 from main.application.repositories import UserRecord, UserRepositoryInterface

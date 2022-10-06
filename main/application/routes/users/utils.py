@@ -2,9 +2,9 @@ from fastapi import Depends, HTTPException
 from pydantic import BaseModel
 from starlette.requests import Request
 
-from main.application.auth import PackerInterface, JWTPackerError
+from main.application.auth import JWTPackerError, PackerInterface
 from main.application.context import jwt_context, user_repository_context
-from main.application.repositories import UserRepositoryInterface, UserRecord
+from main.application.repositories import UserRecord, UserRepositoryInterface
 from main.application.routes.users.exceptions import TokenExpiredError, UserDoesNotExistsHTTPError
 from main.application.utils import oauth2_scheme
 

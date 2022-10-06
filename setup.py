@@ -3,8 +3,7 @@ from importlib.machinery import SourceFileLoader
 from pathlib import Path
 
 from pkg_resources import parse_requirements
-from setuptools import setup, find_packages
-
+from setuptools import find_packages, setup
 
 MODULE_NAME = "simple_server"
 BASE_DIR = Path(__file__).parent.resolve()
@@ -29,7 +28,10 @@ setup(
     long_description=open(BASE_DIR / "README.md").read(),
     url="https://github.com/Neznakomec16/simple_server",
     platforms="all",
-    classifiers=["Operating System :: POSIX", "Programming Language :: Python :: 3.10",],
+    classifiers=[
+        "Operating System :: POSIX",
+        "Programming Language :: Python :: 3.10",
+    ],
     python_requires=">=3.9.0",
     packages=find_packages(),
     install_requires=load_requirements("requirements/requirements-base.txt"),
