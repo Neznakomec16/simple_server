@@ -28,10 +28,7 @@ setup(
     long_description=open(BASE_DIR / "README.md").read(),
     url="https://github.com/Neznakomec16/simple_server",
     platforms="all",
-    classifiers=[
-        "Operating System :: POSIX",
-        "Programming Language :: Python :: 3.10",
-    ],
+    classifiers=["Operating System :: POSIX", "Programming Language :: Python :: 3.10",],
     python_requires=">=3.9.0",
     packages=find_packages(),
     install_requires=load_requirements("requirements/requirements-base.txt"),
